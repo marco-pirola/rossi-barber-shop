@@ -56,6 +56,10 @@
   text-decoration: none;
 }
 
+.btn-menu {
+  display: none;
+}
+
 @media (max-width: 500px) {
   .navbar {
     flex-direction: column;
@@ -74,5 +78,17 @@
 
   .hero h1 {
     font-size: 2rem;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.aperto {
+    display: flex;
+  }
+
+  .btn-menu {
+    display: block;
   }
 }
