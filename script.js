@@ -1,4 +1,3 @@
-// 1. Gestione del Menu Mobile
 const menu = document.querySelector(".nav-links");
 const bottone = document.querySelector(".btn-menu");
 
@@ -6,14 +5,13 @@ bottone.addEventListener("click", function() {
   menu.classList.toggle("aperto");
 });
 
-// 2. Definizione dei dati (Mancava questa parte!)
+
 const servizi = [
   { nome: "Taglio", prezzo: 15 },
   { nome: "Barba", prezzo: 10 },
   { nome: "Taglio + Barba", prezzo: 22 }
 ];
 
-// 3. Generazione dinamica delle card nella griglia
 const contenitore = document.querySelector(".servizi-grid");
 
 for (let i = 0; i < servizi.length; i++) {
