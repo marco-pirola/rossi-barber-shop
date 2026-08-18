@@ -25,3 +25,21 @@ for (let i = 0; i < servizi.length; i++) {
     alert("Hai prenotato: " + servizi[i].nome);
   });
 }
+
+const form = document.querySelector("#form-contatto");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const nome = document.querySelector("#nome").value;
+  const email = document.querySelector("#email").value;
+  const messaggio = document.querySelector("#messaggio").value;
+
+  if (nome === "" || email === "" || messaggio === "") {
+    alert("Compila tutti i campi prima di inviare.");
+    return;
+  }
+
+  alert("Richiesta inviata! Grazie " + nome + ", ti risponderemo presto.");
+  form.reset();
+});
