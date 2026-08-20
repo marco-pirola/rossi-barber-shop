@@ -3,57 +3,280 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rossi Barber Shop</title>
+  <meta
+    name="description"
+    content="Rossi Barber Shop — taglio, barba e cura personale a Milano."
+  >
+  <title>Rossi Barber Shop — Milano</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap"
+    rel="stylesheet"
+  >
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+  <header class="site-header" id="top">
+    <nav class="navbar container" aria-label="Navigazione principale">
 
-  <nav class="navbar">
-    <div class="logo">Rossi Barber Shop</div>
-    <button class="btn-menu">☰</button>
-    <ul class="nav-links">
-      <li><a href="#servizi">Servizi</a></li>
-      <li><a href="#chi-siamo">Chi siamo</a></li>
-      <li><a href="#contatti">Contatti</a></li>
-    </ul>
-  </nav>
+      <a class="logo" href="#top" aria-label="Rossi Barber Shop, home">
+        <span class="logo-mark">R</span>
+        <span>Rossi <strong>Barber Shop</strong></span>
+      </a>
 
-  <header class="hero">
-    <h1>Rossi Barber Shop</h1>
-    <p>Taglio e barba, fatti come si deve.</p>
-    <a href="#contatti" class="btn">Prenota ora</a>
+      <button
+        class="btn-menu"
+        type="button"
+        aria-label="Apri menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#servizi">Servizi</a></li>
+        <li><a href="#chi-siamo">Chi siamo</a></li>
+        <li><a href="#contatti">Contatti</a></li>
+      </ul>
+
+    </nav>
   </header>
 
-  <section id="servizi" class="servizi">
-    <h2>Servizi</h2>
-    <div class="servizi-grid"></div>
-  </section>
+  <main>
 
-  <section id="chi-siamo" class="chi-siamo">
-    <h2>Chi siamo</h2>
-    <p>Da 15 anni tagliamo capelli nel quartiere. Esperienza vera, niente fretta.</p>
-  </section>
+    <section class="hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
 
-  <section id="contatti" class="contatti">
-    <h2>Contatti e orari</h2>
-    <p>Via Roma 12, Milano</p>
-    <p>Lun-Sab: 9:00 - 19:00</p>
-    <p>Tel: 02 1234567</p>
-    <a href="https://maps.google.com" target="_blank">Vedi su Google Maps</a>
+      <div class="container hero-content">
+        <p class="eyebrow">Milano · dal 2011</p>
 
-    <form id="form-contatto">
-      <input type="text" id="nome" placeholder="Il tuo nome">
-      <input type="email" id="email" placeholder="La tua email">
-      <textarea id="messaggio" placeholder="Scrivi qui la tua richiesta"></textarea>
-      <button type="submit">Invia richiesta</button>
-    </form>
-  </section>
+        <h1>
+          Tagli netti.<br>
+          <em>Stile senza fretta.</em>
+        </h1>
 
-  <footer>
-    <p>&copy; 2026 Rossi Barber Shop</p>
+        <p class="hero-copy">
+          Taglio, barba e cura personale in un ambiente semplice,
+          preciso e fatto per farti stare bene.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#contatti" class="btn btn-primary">
+            Prenota un appuntamento <span>↗</span>
+          </a>
+
+          <a href="#servizi" class="text-link">
+            Scopri i servizi
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="intro section">
+      <div class="container intro-grid">
+
+        <p class="section-label">01 — Il nostro lavoro</p>
+
+        <div>
+          <h2>
+            Il classico barber shop,<br>
+            <em>fatto bene.</em>
+          </h2>
+
+          <p class="lead">
+            Da più di 15 anni lavoriamo su taglio e barba con un'idea semplice:
+            ascoltare quello che vuoi e curare ogni dettaglio.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="servizi" class="services section section-dark">
+      <div class="container">
+
+        <div class="section-heading">
+          <div>
+            <p class="section-label">02 — Servizi</p>
+            <h2>Quello che facciamo.</h2>
+          </div>
+
+          <p>
+            Servizi essenziali, eseguiti con precisione.
+            Nessun menu infinito.
+          </p>
+        </div>
+
+        <div
+          class="servizi-grid"
+          aria-live="polite"
+        ></div>
+
+      </div>
+    </section>
+
+    <section id="chi-siamo" class="about section">
+      <div class="container about-grid">
+
+        <div class="about-card" aria-hidden="true">
+          <span class="about-card-year">15+</span>
+          <span class="about-card-text">anni di esperienza</span>
+        </div>
+
+        <div class="about-copy">
+          <p class="section-label">03 — Chi siamo</p>
+
+          <h2>
+            Esperienza vera.<br>
+            <em>Niente fretta.</em>
+          </h2>
+
+          <p>
+            Rossi Barber Shop nasce per chi vuole uscire dal negozio
+            sentendosi bene, senza complicazioni. Un posto curato,
+            un lavoro preciso e un rapporto diretto con chi si prende
+            cura del tuo stile.
+          </p>
+
+          <div class="about-facts">
+            <div>
+              <strong>2011</strong>
+              <span>Anno di apertura</span>
+            </div>
+
+            <div>
+              <strong>6</strong>
+              <span>Giorni su 7</span>
+            </div>
+
+            <div>
+              <strong>1:1</strong>
+              <span>Attenzione al cliente</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contatti" class="contact section">
+      <div class="container contact-grid">
+
+        <div>
+          <p class="section-label">04 — Contatti</p>
+
+          <h2>
+            Passa a trovarci.<br>
+            <em>Al resto pensiamo noi.</em>
+          </h2>
+
+          <div class="contact-info">
+
+            <div>
+              <span>Indirizzo</span>
+              <strong>Via Roma 12, Milano</strong>
+            </div>
+
+            <div>
+              <span>Orari</span>
+              <strong>Lun — Sab · 09:00 — 19:00</strong>
+            </div>
+
+            <div>
+              <span>Telefono</span>
+              <strong>02 1234567</strong>
+            </div>
+
+          </div>
+
+          <a
+            class="map-link"
+            href="https://www.google.com/maps/search/?api=1&query=Via+Roma+12,+Milano"
+            target="_blank"
+            rel="noopener"
+          >
+            Apri su Google Maps ↗
+          </a>
+        </div>
+
+        <form
+          id="form-contatto"
+          class="contact-form"
+          novalidate
+        >
+          <div class="form-title">
+            Richiedi un appuntamento
+          </div>
+
+          <label for="nome">Nome</label>
+
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Il tuo nome"
+            autocomplete="name"
+            required
+          >
+
+          <label for="email">Email</label>
+
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nome@email.it"
+            autocomplete="email"
+            required
+          >
+
+          <label for="messaggio">Messaggio</label>
+
+          <textarea
+            id="messaggio"
+            name="messaggio"
+            rows="4"
+            placeholder="Es. Vorrei prenotare un taglio venerdì pomeriggio."
+            required
+          ></textarea>
+
+          <button
+            class="btn btn-primary form-submit"
+            type="submit"
+          >
+            Invia richiesta <span>→</span>
+          </button>
+
+          <p class="form-note">
+            Demo form: nessun messaggio viene realmente inviato.
+          </p>
+
+          <p
+            id="form-status"
+            class="form-status"
+            role="status"
+            aria-live="polite"
+          ></p>
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© 2026 Rossi Barber Shop</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>
-
 </body>
 </html>
